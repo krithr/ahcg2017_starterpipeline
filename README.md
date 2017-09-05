@@ -18,5 +18,5 @@ Reference genomes can be downloaded from [Illumina iGenomes](http://support.illu
 ## Data
 
 1. [Development and validation of a clinical cancer genomic profiling test based on massively parallel DNA sequencing.- Frampton et al](https://www.ncbi.nlm.nih.gov/pubmed/24142049)
-2. SRA SRP028580 
+2. [SRA SRP028580](https://www.ncbi.nlm.nih.gov/sra/?term=SRP028580) 
 3. SRR948994_1.fastq  SRR948994_2.fastq
