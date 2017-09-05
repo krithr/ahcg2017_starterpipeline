@@ -15,23 +15,8 @@ Variant calling pipeline for genomic data analysis
 
 Reference genomes can be downloaded from [Illumina iGenomes](http://support.illumina.com/sequencing/sequencing_software/igenome.html)
 
-## Test data
+## Data
 
-Use the following protocol to download and prepare test dataset from NIST sample NA12878
-
-```{sh}
-wget ftp://ftp-trace.ncbi.nih.gov/giab/ftp/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/NIST7035_TAAGGCGA_L001_R1_001.fastq.gz
-wget ftp://ftp-trace.ncbi.nih.gov/giab/ftp/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/NIST7035_TAAGGCGA_L001_R2_001.fastq.gz
-gunzip NIST7035_TAAGGCGA_L001_R1_001.fastq.gz
-gunzip NIST7035_TAAGGCGA_L001_R2_001.fastq.gz
-head -100000 NIST7035_TAAGGCGA_L001_R1_001.fastq > test_r1.fastq
-head -100000 NIST7035_TAAGGCGA_L001_R2_001.fastq > test_r2.fastq
-```
-
-## Help
-
-To access help use the following command:
-
-```{sh}
-python3 ahcg_pipeline.py -h
-```
+1. Development and validation of a clinical cancer genomic profiling test based on massively parallel DNA sequencing.- Frampton et al.
+2. SRA SRP028580 
+3. SRR948994_1.fastq  SRR948994_2.fastq
