@@ -20,3 +20,19 @@ Reference genomes can be downloaded from [Illumina iGenomes](http://support.illu
 1. [Development and validation of a clinical cancer genomic profiling test based on massively parallel DNA sequencing.- Frampton et al](https://www.ncbi.nlm.nih.gov/pubmed/24142049)
 2. [SRA SRP028580](https://www.ncbi.nlm.nih.gov/sra/SRX332536[accn])
 3. SRR948994_1.fastq  SRR948994_2.fastq
+
+## Command
+
+#/data2/AHCG2017FALL/bin/samtools-1.5/samtools faidx genome.fa
+
+python ahcg_pipeline_v1.0.1Cai.py \
+-t /data2/AHCG2017FALL/bin/Trimmomatic-0.36/trimmomatic-0.36.jar \
+-b /data2/AHCG2017FALL/bin/bowtie2-2.2.9/bowtie2 \
+-p /data2/AHCG2017FALL/bin/picard/picard.jar \
+-g /data2/AHCG2017FALL/bin/GenomeAnalysisTK-3.8-0-ge9d806836/GenomeAnalysisTK.jar \
+-i /data2/AHCG2017FALL/data/SRR948994_1.fastq /data2/AHCG2017FALL/data/SRR948994_2.fastq \
+-w /data2/AHCG2017FALL/reference_genome/Bowtie2Index/genome \
+-r /data2/AHCG2017FALL/reference_genome/genome.fa \
+-a /data2/AHCG2017FALL/bin/Trimmomatic-0.36/adapters/NexteraPE-PE.fa \
+-o /data2/AHCG2017FALL/output \
+-d /data2/AHCG2017FALL/reference_genome/GATKResourceBundle/dbsnp_146.hg38.vcf.gz
