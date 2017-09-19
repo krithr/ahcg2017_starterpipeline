@@ -1,0 +1,80 @@
+https://www.perkin.org.uk/posts/create-
+virtualbox-vm-from-the-command-line.html
+
+Create VirtualBox VM from the command line
+$ VM=''Ubuntu-64-DR''
+
+Create a 64GB “dynamic” disk.
+$ VBoxManage createhd --filename $VM.vdi --
+size 64768
+
+list of the OS types VirtualBox recognises using
+:
+$ VBoxManage list ostypes
+$ VBoxManage createvm --name $VM --
+ostype "Ubuntu_64" --register
+
+Add a SATA controller with the dynamic disk atta
+ched.
+$ VBoxManage storagectl $VM --
+name "SATA Controller" --add sata \
+>  --controller IntelAHCI
+$ VBoxManage storageattach $VM --
+storagectl "SATA Controller" --port 0 \
+>  --device 0 --type hdd --medium $VM.vdi
+
+Add an IDE controller with a DVD drive attached,
+ and the install ISO inserted into the drive:
+$ VBoxManage storagectl $VM --
+
+name "IDE Controller" --add ide
+$ VBoxManage storageattach $VM --
+storagectl "IDE Controller" --port 0 \
+>  --device 0 --type dvddrive --medium /path/to/
+Ubuntu server.iso  (wget http://
+mirror.stjschools.org/public/ubuntu-release/
+16.04.1/ubuntu-16.04.1-server-amd64.iso)
+
+Misc system settings.
+$ VBoxManage modifyvm $VM --ioapic on
+$ VBoxManage modifyvm $VM --boot1 dvd --
+boot2 disk --boot3 none --boot4 none
+$ VBoxManage modifyvm $VM --memory 4096 --
+vram 128
+$ VBoxManage modifyvm "guest" --nic1 nat
+$ vboxmanage modifyvm "guest" --
+natpf1 "ssh,tcp,,10022,,22"
+
+Configuration is all done, boot it up! If you’ve
+ done this one a remote machine, you can RDP to
+the console via vboxhost:3389.
+$ VBoxManage startvm $VM --type headless
+
+install the server
+follow the instructions
+username vannberglab
+password vannberglab
+
+Power off
+$ VBoxManage controlvm $VM poweroff soft
+
+eject the DVD
+$ VBoxManage storageattach $VM --
+storagectl "IDE Controller" --port 0 \
+>  --device 0 --type dvddrive --medium none
+
+take regular snapshots
+$ VBoxManage snapshot $VM take
+
+revert back to a particular snapshot:
+$ VBoxManage snapshot $VM restore
+
+$ VBoxManage import Ubuntu-64-DR.ova
+
+$ VBoxManage startvm $VM --type headless
+
+$ ssh vannberglab@localhost -p 10022
+
+$ VBoxManage controlvm $VM poweroff soft
+
+$ vboxmanage unregistervm Win7ult32nl --delete
