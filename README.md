@@ -1,5 +1,5 @@
 Variant calling pipeline for genomic data analysis.
-Krithika Ravindran Naidu, MS Bioinformatics, Georgia Institute of Technology.
+> Krithika Ravindran Naidu, MS Bioinformatics, Georgia Institute of Technology.
 
 # About
 * This pipeline is a variant calling pipeline. 
