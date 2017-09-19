@@ -3,11 +3,11 @@ Variant calling pipeline for genomic data analysis.
 Krithika Ravindran Naidu, MS Bioinformatics, Georgia Institute of Technology.
 
 # ahcg_pipeline
-This pipeline is a variant calling pipeline. 
+* This pipeline is a variant calling pipeline. 
 
-The expected output is a VCF file containing potential variants (/data2/AHCG2017FALL/output). 
+* The expected output is a VCF file containing potential variants (/data2/AHCG2017FALL/output). 
 
-The test dataset is located here: https://www.ncbi.nlm.nih.gov/sra/SRX332536%5Baccn%5D.
+* The test dataset is located here: https://www.ncbi.nlm.nih.gov/sra/SRX332536%5Baccn%5D.
 
 ## Mission Statement
 
