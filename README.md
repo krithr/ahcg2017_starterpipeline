@@ -24,7 +24,7 @@ Reference genomes can be downloaded from [Illumina iGenomes](http://support.illu
 ## Command
 
 #/data2/AHCG2017FALL/bin/samtools-1.5/samtools faidx genome.fa
-
+```
 python ahcg_pipeline_v1.0.1Cai.py \
 -t /data2/AHCG2017FALL/bin/Trimmomatic-0.36/trimmomatic-0.36.jar \
 -b /data2/AHCG2017FALL/bin/bowtie2-2.2.9/bowtie2 \
@@ -36,3 +36,4 @@ python ahcg_pipeline_v1.0.1Cai.py \
 -a /data2/AHCG2017FALL/bin/Trimmomatic-0.36/adapters/NexteraPE-PE.fa \
 -o /data2/AHCG2017FALL/output \
 -d /data2/AHCG2017FALL/reference_genome/GATKResourceBundle/dbsnp_146.hg38.vcf.gz
+```
