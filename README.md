@@ -32,7 +32,7 @@ Reference genomes can be downloaded from [Illumina iGenomes](http://support.illu
 
 ## Virtual Machine Installation
 
-* [Instructions](ahcg2017_starterpipeline/lib/VM_setup.pdf)
+* [Instructions](ahcg2017_starterpipeline/VM Installation)
 
 ## Running the pipeline
 
