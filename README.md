@@ -21,6 +21,10 @@ Reference genomes can be downloaded from [Illumina iGenomes](http://support.illu
 2. [SRA SRP028580](https://www.ncbi.nlm.nih.gov/sra/SRX332536[accn])
 3. SRR948994_1.fastq  SRR948994_2.fastq
 
+## Virtual Machine Installation
+
+* [Instructions](ahcg2017_starterpipeline/lib/VM_setup.pdf)
+
 ## Running the pipeline
 
 #/data2/AHCG2017FALL/bin/samtools-1.5/samtools faidx genome.fa
