@@ -9,7 +9,6 @@ Variant calling pipeline for genomic data analysis.
 ## Mission Statement
 
 
-
 ## Requirements
 
 1. [Python3 - version 3.4.1](https://www.python.org/download/releases/3.4.1/)
@@ -47,3 +46,6 @@ python ahcg_pipeline_v1.0.1Cai.py \
 -o /data2/AHCG2017FALL/output \
 -d /data2/AHCG2017FALL/reference_genome/GATKResourceBundle/dbsnp_146.hg38.vcf.gz
 ```
+## Analysis of datasets
+
+Looking for specific liquid biopsy scientific papers and finding the best practice methods to optimize the variant calling pipeline.
