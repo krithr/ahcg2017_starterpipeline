@@ -50,6 +50,6 @@ python ahcg_pipeline_v1.0.1Cai.py \
 
 Looking for specific liquid biopsy scientific papers and finding the best practice methods to optimize the variant calling pipeline.
 
-## Implementation 
+## Updates 
 
-This is a study to perform early detection of cancer using liquid biopsy. It is done through exome sequencing and 150-200X  coverage is obtained. The pipeline captures bed files to coverage out. The version of pipeline that is used in the virtual bix right now is v1.0.5. This can be verified using a test data.
+From the ahcg_pipeline_v1.0.4.py pipeline, a few changes were made and the version was updated to v1.0.5. The data samples used are found in /data2/AHCG2017FALL/data3 as MenCo002DNA and MenPa004DNA. This is a study to perform early detection of cancer using liquid biopsy. An Illumina HiSeq2500 was performed for tumor profiling. It is done through exome sequencing and 150-200X coverage is obtained. The pipeline captures bed files to coverage out. The version of pipeline that is used in the virtual bix right now is v1.0.5. This can be verified using a test data. 
