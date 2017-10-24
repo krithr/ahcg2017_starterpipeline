@@ -52,4 +52,4 @@ Looking for specific liquid biopsy scientific papers and finding the best practi
 
 ## Implementation 
 
-This is a study to perform early detection of cancer using liquid biopsy. It is done through exome sequencing and 150-200X  coverage is obtained. The pipeline captures bed files to coverage out. The version of pipeline that is used in the virtual bix right now is v1.0.5.
+This is a study to perform early detection of cancer using liquid biopsy. It is done through exome sequencing and 150-200X  coverage is obtained. The pipeline captures bed files to coverage out. The version of pipeline that is used in the virtual bix right now is v1.0.5. This can be verified using a test data.
