@@ -21,10 +21,23 @@ Variant calling pipeline for genomic data analysis.
 
 Reference genomes can be downloaded from [Illumina iGenomes](http://support.illumina.com/sequencing/sequencing_software/igenome.html)
 
+* Command
+```
+wget ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Homo_sapiens/NCBI/GRCh38/Homo_sapiens_NCBI_GRCh38.tar.gz
+```
+
 ## Data
 
 1. [Development and validation of a clinical cancer genomic profiling test based on massively parallel DNA sequencing.- Frampton et al](https://www.ncbi.nlm.nih.gov/pubmed/24142049)
 2. SRR948994_1.fastq  SRR948994_2.fastq, [SRA SRP028580](https://www.ncbi.nlm.nih.gov/sra/SRX332536[accn])
+
+* Downloading the sample from SRA database :
+
+```
+fastq-dump --split-files SRR948994
+```
+
+
 
 ## Virtual Machine Installation
 
