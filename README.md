@@ -5,6 +5,7 @@ Variant calling pipeline for genomic data analysis.
 * This pipeline is a variant calling pipeline. 
 * The expected output is a VCF file containing potential variants (/data2/AHCG2017FALL/output). 
 * The test dataset is located here: https://www.ncbi.nlm.nih.gov/sra/SRX332536%5Baccn%5D.
+* Looking for specific liquid biopsy scientific papers and finding the best practice methods to optimize the variant calling pipeline.
 
 ## Mission Statement
 
@@ -38,9 +39,6 @@ wget ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Homo_sapiens/NCBI/GRCh38/Homo
 ```
 fastq-dump --split-files SRR948994
 ```
-
-
-
 ## Virtual Machine Installation
 
 * [Instructions](https://github.com/krithr/ahcg2017_starterpipeline/blob/master/VM%20Installation)
@@ -61,13 +59,15 @@ python ahcg_pipeline_v1.0.1Cai.py \
 -o /data2/AHCG2017FALL/output \
 -d /data2/AHCG2017FALL/reference_genome/GATKResourceBundle/dbsnp_146.hg38.vcf.gz
 ```
-## Analysis of datasets
 
-Looking for specific liquid biopsy scientific papers and finding the best practice methods to optimize the variant calling pipeline.
+## Directory structure
+```
+mkdir -p data/reads data/reference data/adapters output
+```
 
-## Updates merging the wet lab technique with the bioinformatic pipeline
+## Updates : Merging the wet lab technique with the bioinformatic pipeline
 
-From the ahcg_pipeline_v1.0.4.py pipeline, a few changes were made and the version was updated to v1.0.5. The data samples used are found in /data2/AHCG2017FALL/data3 as MenCo002DNA and MenPa004DNA. The DNA samples were collected from the nano-vescicles of the patients' blood. This is a study to perform early detection of cancer using liquid biopsy. An Illumina HiSeq2500 was performed for tumor profiling. It is done through exome sequencing and 150-200X coverage is obtained. The pipeline captures bed files to coverage out. The version of pipeline that is used in the virtual box right now is v1.0.5. This can be verified using a test data. 
+From the ahcg_pipeline_v1.0.4.py pipeline, a few changes were made and the version was updated to v1.0.5. The data samples used are found in /data2/AHCG2017FALL/data3 as MenCo002DNA and MenPa004DNA. The DNA samples were collected from the nano-vescicles of the patients' blood. An Illumina HiSeq2500 was performed for tumor profiling. It is done through exome sequencing and 150-200X coverage is obtained. The pipeline captures bed files to coverage out. The version of pipeline that is used in the virtual box right now is v1.0.5. This can be verified using a test data. 
 
 ## Final version of the script
 
