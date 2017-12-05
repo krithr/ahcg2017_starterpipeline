@@ -8,6 +8,7 @@ Variant calling pipeline for genomic data analysis.
 
 ## Mission Statement
 
+The primary aim of the pipeline is to detect cancer early by identifying the rare variants from the liquid biopsy samples and eventually combine the wet-lab and bioinformatic characteristics of the project.
 
 ## Requirements
 
