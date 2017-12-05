@@ -39,6 +39,9 @@ wget ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Homo_sapiens/NCBI/GRCh38/Homo
 ```
 fastq-dump --split-files SRR948994
 ```
+3.
+4.[SRR1654210](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1654210) and [SRR1654222](https://www.ncbi.nlm.nih.gov/sra/SRR1654222/)
+
 ## Virtual Machine Installation
 
 * [Instructions](https://github.com/krithr/ahcg2017_starterpipeline/blob/master/VM%20Installation)
