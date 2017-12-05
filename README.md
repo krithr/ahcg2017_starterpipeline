@@ -17,6 +17,7 @@ The primary aim of the pipeline is to detect cancer early by identifying the rar
 3. [Bowtie2 - version 2.2.9](https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.2.9/)
 4. [Picard tools - version 2.12.1](https://github.com/broadinstitute/picard/releases/tag/2.12.1/picard.jar)
 5. [GATK - version 3.8.0](https://software.broadinstitute.org/gatk/download/)
+6. [Control-FREEC](http://boevalab.com/FREEC/tutorial.html)
 
 ## Reference genome
 
