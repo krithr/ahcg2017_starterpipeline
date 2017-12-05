@@ -75,7 +75,7 @@ From the ahcg_pipeline_v1.0.4.py pipeline, a few changes were made and the versi
 ahcg_pipeline.py 1.0.8
 ```
 Location
-
 ```
 /data2/AHCG2017/bin/pipeline/ahcg_pipeline.py
+./ahcg_pipeline.v1.0.7.py -c config_file.txt
 ```
