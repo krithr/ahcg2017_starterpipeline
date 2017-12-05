@@ -77,5 +77,8 @@ ahcg_pipeline.py 1.0.8
 Location
 ```
 /data2/AHCG2017/bin/pipeline/ahcg_pipeline.py
+```
+Command
+```
 ./ahcg_pipeline.v1.0.7.py -c config_file.txt
 ```
