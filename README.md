@@ -33,13 +33,12 @@ wget ftp://igenome:G3nom3s4u@ussd-ftp.illumina.com/Homo_sapiens/NCBI/GRCh38/Homo
 
 1. [Development and validation of a clinical cancer genomic profiling test based on massively parallel DNA sequencing.- Frampton et al](https://www.ncbi.nlm.nih.gov/pubmed/24142049)
 2. SRR948994_1.fastq  SRR948994_2.fastq, [SRA SRP028580](https://www.ncbi.nlm.nih.gov/sra/SRX332536[accn])
+3. [SRR1654210](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1654210) and [SRR1654222](https://www.ncbi.nlm.nih.gov/sra/SRR1654222/)
 
 * Downloading the sample from SRA database :
-
 ```
 fastq-dump --split-files SRR948994
 ```
- 3.[SRR1654210](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1654210) and [SRR1654222](https://www.ncbi.nlm.nih.gov/sra/SRR1654222/)
 
 ## Virtual Machine Installation
 
@@ -65,6 +64,7 @@ python ahcg_pipeline_v1.0.1Cai.py \
 ## Directory structure
 ```
 mkdir -p data/reads data/reference data/adapters output
+
 ```
 ## Config file
 ```
@@ -103,7 +103,6 @@ mateOrientation = FR
 From the ahcg_pipeline_v1.0.4.py pipeline, a few changes were made and the version was updated to v1.0.5. The data samples used are found in /data2/AHCG2017FALL/data3 as MenCo002DNA and MenPa004DNA. The DNA samples were collected from the nano-vescicles of the patients' blood. An Illumina HiSeq2500 was performed for tumor profiling. It is done through exome sequencing and 150-200X coverage is obtained. The pipeline captures bed files to coverage out. The version of pipeline that is used in the virtual box right now is v1.0.5. This can be verified using a test data. 
 
 ## Final version of the script
-
 ```
 ahcg_pipeline.py 1.0.8
 ```
